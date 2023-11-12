@@ -1,0 +1,86 @@
+@import url('../assets/fonts/fonts.css');
+
+:root {
+    /* FONTS */
+    --primary-font: "Poppins", sans-serif;
+  
+    /* CONTAINER */
+    --container-lg: 1080px;
+  
+    /* LARGE */
+    --text-2xl: 28px;
+    --text-3xl: 36px;
+    --text-4xl: 40px;
+    --text-5xl: 64px;
+    --text-6xl: 80px;
+  
+    /* REGULAR */
+    --text-xl: 24px;
+    --text-lg: 20px;
+    --text-base: 16px;
+  
+    /* COLOR */
+    --white: #fff;
+    --black: #000;
+    --dark-gray: #6f6f6f;
+    --orange: #f8a401;
+  }
+
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: var(--container-lg);
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.nav-wrapper{
+padding: 30px 0px;
+
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-title{
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.nav-menu a {
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--black);
+    text-decoration: none;
+
+}
+
+.cta-button{
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: capitalize;
+
+    padding: 16px 40px;
+    border: 1px solid var(--black);
+    border-radius: 12px;
+    
+
+}
